@@ -17,6 +17,8 @@ let people = [
 //these can be written in one line function MainComponent(){ return <h1>You there</h1>}
 
 // ReactDOM.render(<p>Welcome to Session 2 of react</p>, document.getElementById("root"))
+// let header = document.querySelector(".header");
+// header.innerText = "2 Ocean in between us:";
 function Day1(){
     return(
         <div>
@@ -44,6 +46,29 @@ function MainComponent(){
 function Profile(){
     return <p>Happy Coding and All the Best</p>
 }
+let navElement = (
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+);
+let challengeAppend = (
+    <div>
+        <fieldset>
+            <legend>Best Muxic</legend>
+            <h1>Best Artist</h1>
+            <p>Polo g</p>
+            <p>Trevor Daniel</p>
+        </fieldset>
+    </div>
+);
+
 ReactDOM.render(
     <div>
         <Day1/>
@@ -53,3 +78,13 @@ ReactDOM.render(
     </div>,
     document.getElementById("root")
 )
+let element = <p className="paragraph1">Continue coding</p>
+ReactDOM.render(challengeAppend, document.getElementById("music"))
+// ReactDOM.render(document.getElementById("practise").append(JSON.stringify(challengeAppend)))
+// ReactDOM.render(element, document.getElementById("practise"));
+ReactDOM.render(navElement, document.getElementById("nav"))
+//imperative example of vanillaJs
+// const p = document.createElement("p");
+// p.textContent = "This is an imperative way to program";
+// p.className = "header";
+// document.getElementById("root").append(p);
