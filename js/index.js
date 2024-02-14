@@ -23,7 +23,7 @@ function Day1(){
             <p>Self placed and interesting Course</p>
         </div>
     )
-}
+};
 function Day2(){
     return (
         <div>
@@ -31,7 +31,7 @@ function Day2(){
             <p>Need to achieve more and learn more and gain more. More and more of React</p>
         </div>
     )
-}
+};
 function MainComponent(){
     return (
         <div>
@@ -39,10 +39,10 @@ function MainComponent(){
             <ul><li>Name: Gard Alson</li><li>Age: 23</li></ul>
         </div>
     )
-}
+};
 function Profile(){
     return <p>Happy Coding and All the Best</p>
-}
+};
 let navElement = (
     <div>
         <nav>

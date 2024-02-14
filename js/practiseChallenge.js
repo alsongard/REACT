@@ -1,4 +1,17 @@
 /* challenge1: list of reasons for learning react*/
+function HeaderInfo(){
+    return(
+        <div>
+            <img src="../images/reactLogo.png" width="40px"/>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    )
+};
 function Reasons(){
     return(
         <div>
@@ -13,6 +26,22 @@ function Reasons(){
         </div>
     )
 };
-
+function FooterInfo(){
+    return (<p>@ 20xx Safari development. All rights reserved.</p>)
+};
+ReactDOM.render(
+    <div>
+        <HeaderInfo/>,
+        <Reasons/>,
+        <FooterInfo/>
+    </div>,
+    document.querySelector(".root")
+)
 // ReactDOM.render(<h1>Programming</h1>, document.querySelector(".root"))
-ReactDOM.render(<Reasons/>,document.querySelector(".root"))
+// ReactDOM.render(
+//     <div>
+//         <h1>Hello world</h1>
+//         <p>Checking if working </p>
+//     </div>,
+//     document.querySelector(".root")
+// );
