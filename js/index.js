@@ -7,34 +7,49 @@
 let people = [
     "Gard Alson Safari",
     "Living  in Nairobi"
-];/*declared variable containing list of items */
+];
+/*declared variable containing list of items */
 //declared another variable listItems
 // //used the map() attribure for the array people which seems to iterate throught the list
 // const listItems = people.map(person => <li>{person}</li>);
 // ReactDOM.render(listItems, document.getElementById("root")); 
 
-function Profile(){
-    return (
-        <ul>
-            <li>Partin Ways</li>
-            <li>Distraction</li>
-        </ul>
-    );
-};
-function MainContent(){
+//these can be written in one line function MainComponent(){ return <h1>You there</h1>}
+
+// ReactDOM.render(<p>Welcome to Session 2 of react</p>, document.getElementById("root"))
+function Day1(){
+    return(
+        <div>
+            <h1>Welcome 2 React FreeCodeCamp Course</h1>
+            <p>Self placed and interesting Course</p>
+        </div>
+    )
+}
+function Day2(){
     return (
         <div>
-            <h1>You there let's see</h1>
-            <p>Hi there let's see again</p>
-
+            <h1>Welcome to day 2 of react.</h1>
+            <p>Need to achieve more and learn more and gain more. More and more of React</p>
         </div>
-    );
-};
-//these can be written in one line function MainComponent(){ return <h1>You there</h1>}
+    )
+}
+function MainComponent(){
+    return (
+        <div>
+            <h3>Getting to know more</h3>
+            <ul><li>Name: Gard Alson</li><li>Age: 23</li></ul>
+        </div>
+    )
+}
+function Profile(){
+    return <p>Happy Coding and All the Best</p>
+}
 ReactDOM.render(
     <div>
+        <Day1/>
         <Profile/>
-        <MainContent/>
+        <MainComponent/>
+        <Day2/>
     </div>,
     document.getElementById("root")
-);
+)
