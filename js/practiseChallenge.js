@@ -27,7 +27,7 @@ function Reasons(){
     )
 };
 function FooterInfo(){
-    return (<p>@ 20xx Safari development. All rights reserved.</p>)
+    return (<p>@ 2024 Safari development. All rights reserved.</p>)
 };
 ReactDOM.render(
     <div>
