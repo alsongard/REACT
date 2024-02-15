@@ -15,11 +15,14 @@ header{
     height:50px;
 }
 .nav-bar{
+    /* background-color: red; */
+    width:400px;
     list-style: none;
     display: flex;
-    gap:3rem;
-    margin-right: 30px;
-    /* justify-content: space-between; */
+    flex-direction: row;
+    /* gap:3rem; */
+    /* margin-right: 30px; */
+    justify-content: space-evenly;
 }
 .nav-bar > li > a{
     text-decoration: none;
