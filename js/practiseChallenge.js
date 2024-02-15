@@ -1,42 +1,45 @@
 /* challenge1: list of reasons for learning react*/
 function HeaderInfo(){
     return(
-        <div>
-            <img src="../images/reactLogo.png" width="40px"/>
-            <ul>
+        <header>
+            <img className="image-logo" src="../images/reactLogo.png"/>
+            <ul className="nav-bar">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </div>
+        </header>
     )
 };
 function Reasons(){
     return(
-        <div>
-            <h3>Reasons 2 study React</h3>
-            <ol>
+        <section className="mainSection">
+            <h1>Reasons 2 study React</h1>
+            <ol className="reasons">
                 <li>To increase my Knowledge on Programming</li>
                 <li>To develop Projects</li>
                 <li>Intergrate React with my Websites</li>
                 <li>To acquire skills for future</li>
                 <li>Keep up with trending Technologies</li>
             </ol>
-        </div>
+        </section>
     )
 };
 function FooterInfo(){
-    return (<p>@ 2024 Safari development. All rights reserved.</p>)
+    return (
+    <div className="footerData">
+        <p>@ 2024 Safari development. All rights reserved.</p>
+    </div>)
 };
-ReactDOM.render(
-    <div>
-        <HeaderInfo/>,
-        <Reasons/>,
-        <FooterInfo/>
-    </div>,
-    document.querySelector(".root")
-)
+// ReactDOM.render(
+//     <div>
+//         <HeaderInfo/>
+//         <Reasons/>
+//         <FooterInfo/>
+//     </div>,
+//     document.querySelector(".root")
+// )
 // ReactDOM.render(<h1>Programming</h1>, document.querySelector(".root"))
 // ReactDOM.render(
 //     <div>
@@ -45,3 +48,16 @@ ReactDOM.render(
 //     </div>,
 //     document.querySelector(".root")
 // );
+
+// also you could render each of the function in another function 
+function Page(){
+    return (
+        <div>
+            <HeaderInfo/>
+            <Reasons/>
+        </div>
+
+    )
+}
+ReactDOM.render(<Page/>, document.querySelector(".root"));
+ReactDOM.render(<FooterInfo/>, document.querySelector("footer"))
