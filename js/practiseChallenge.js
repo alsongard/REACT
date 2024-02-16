@@ -1,17 +1,8 @@
 /* challenge1: list of reasons for learning react*/
-function HeaderInfo(){
-    return(
-        <header>
-            <img className="image-logo" src="../images/reactLogo.png"/>
-            <ul className="nav-bar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-    )
-};
+
+// import HeaderInfo from "./Header";
+// import FooterInfo from "./Footer";
+
 function Reasons(){
     return(
         <section className="mainSection">
@@ -26,12 +17,7 @@ function Reasons(){
         </section>
     )
 };
-function FooterInfo(){
-    return (
-    <div className="footerData">
-        <p>@ 2024 Safari development. All rights reserved.</p>
-    </div>)
-};
+
 // ReactDOM.render(
 //     <div>
 //         <HeaderInfo/>
@@ -53,11 +39,11 @@ function FooterInfo(){
 function Page(){
     return (
         <div>
-            <HeaderInfo/>
             <Reasons/>
+            
         </div>
 
     )
 }
 ReactDOM.render(<Page/>, document.querySelector(".root"));
-ReactDOM.render(<FooterInfo/>, document.querySelector("footer"))
+// ReactDOM.render(<FooterInfo/>, document.querySelector("footer"))
