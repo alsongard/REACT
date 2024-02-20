@@ -1,5 +1,4 @@
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-
+//import react from "react-dom"
 export default function HeaderInfo(){
     return(
         <header>

@@ -1,4 +1,4 @@
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+// import react from "react"
 
 export default function FooterInfo(){
     return (
