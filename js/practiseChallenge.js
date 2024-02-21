@@ -1,7 +1,6 @@
 /* challenge1: list of reasons for learning react*/
 // import HeaderInfo from "./Header";
 // import FooterInfo from "./Footer";
-
 function HeaderInfo(){
     return(
         <header>
