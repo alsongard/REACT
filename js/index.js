@@ -1,88 +1,91 @@
-// ReactDOM.render(<h1>Hello Everyone!</h1>, document.getElementById("root"))
-// ReactDOM.render(
-//     <ul><li>Gard Alson</li><li>Age is 23</li></ul>,
-//     document.getElementById("root"));
-    //was working place comma @right place
-// listOfElements.foreach(el => ReactDOM.render(<ul><li>Gard</li><li>Alson</li></ul>, document.getElementById("root"))) not work
-let people = [
-    "Gard Alson Safari",
-    "Living  in Nairobi"
-];
-/*declared variable containing list of items */
-//declared another variable listItems
-// //used the map() attribure for the array people which seems to iterate throught the list
-// const listItems = people.map(person => <li>{person}</li>);
-// ReactDOM.render(listItems, document.getElementById("root")); 
+import React  from "react";
+import ReactDOM from "react-dom";
+import "./style.css";
+import logo from "./logo192.png";
+import myImage from "./Programmer.jpg";
+function HeaderInfo(){
+    return(
+        <header className="header">
+            <div className="logoContainer">
+                <img className="logo" src={logo} alt="logo"/>
+                <h3>ReactFacts</h3>
+            </div>
+            <h4>React Course-Project 1</h4>
+        </header>
+    )
+}
+function Reasons(){
+    return (
+        <section className="home">
+            <h3>Reasons 2 Study React</h3>
+            <ol className="reasonsList">
+                <li>Create Better and Interactive Websites</li>
+                <li>Extend my Knowledge in Full Stack Development</li>
+                <li>Build up my Career Level</li>
+            </ol>
+        </section>
+    )
+}
+function Facts(){
+    return (
+        <section>
+            <div>
+                <h1>Fun Facts about React</h1>
+                <ul>
+                    <li><span>Was first released in 2013</span></li>
+                    <li><span>Was originalyy created by Jordan Walke</span></li>
+                    <li><span>Has well over 100k start on GitHub</span></li>
+                    <li><span>Is maintained by Facebook</span></li>
+                    <li><span>Powers thousands of enterprise apps, including mobile apps</span></li>
+                </ul>
+            </div>
+        </section>
+    )
+}
+function Page(){
+    return (
+        <div>
+        <HeaderInfo/>
+        <Facts/>
+        </div>
+    )
+};
+function Home(){
+    return (
+        <section>
+            <img  src={myImage} className="myImage" alt="myImage"/>
+            <h1>Gard Alson</h1>
+            <p>Full Stack Developer</p>
+            <a href="#" type="button">Linkedin</a>
+            <a href="#" type="button">Twitter</a>
+        </section>
+    )
 
-// let header = document.querySelector(".header");
-// header.innerText = "2 Ocean in between us:";
-function Day1(){
+};
+function About(){
+    return(
+        <section className="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure vel, omnis beatae optio vitae, facilis aliquam explicabo voluptatem, dolore rerum laborum laudantium iste officiis sint ut quibusdam eveniet sit. </p>
+        </section>
+    )
+};
+function Interest(){
+    return(
+        <section className="interest">
+            <h2>Interest</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure vel, omnis beatae optio vitae, facilis aliquam explicabo voluptatem, dolore rerum laborum laudantium iste officiis sint ut quibusdam eveniet sit.</p>
+        </section>
+    )
+};
+function DigitalPage(){
     return(
         <div>
-            <h1>Welcome 2 React FreeCodeCamp Course</h1>
-            <p>Self placed and interesting Course</p>
+            <Home/>
+            <About/>
+            <Interest/>
         </div>
     )
 };
-function Day2(){
-    return (
-        <div>
-            <h1>Welcome to day 2 of react.</h1>
-            <p>Need to achieve more and learn more and gain more. More and more of React</p>
-        </div>
-    )
-};
-function MainComponent(){
-    return (
-        <div>
-            <h3>Getting to know more</h3>
-            <ul><li>Name: Gard Alson</li><li>Age: 23</li></ul>
-        </div>
-    )
-};
-function Profile(){
-    return <p>Happy Coding and All the Best</p>
-};
-let navElement = (
-    <div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-);
-let challengeAppend = (
-    <div>
-        <fieldset>
-            <legend>Best Muxic</legend>
-            <h1>Best Artist</h1>
-            <p>Polo g</p>
-            <p>Trevor Daniel</p>
-        </fieldset>
-    </div>
-);
-
-ReactDOM.render(
-    <div>
-        <Day1/>
-        <Profile/>
-        <MainComponent/>
-        <Day2/>
-    </div>,
-    document.getElementById("root")
-)
-let element = <p className="paragraph1">Continue coding</p>
-ReactDOM.render(challengeAppend, document.getElementById("music"))
-ReactDOM.render(navElement, document.getElementById("nav"))
-
-// ReactDOM.render(document.getElementById("practise").append(JSON.stringify(challengeAppend)))
-// ReactDOM.render(element, document.getElementById("practise"));
-//imperative example of vanillaJs
-// const p = document.createElement("p");
-// p.textContent = "This is an imperative way to program";
-// p.className = "header";
-// document.getElementById("root").append(p);
+ReactDOM.render(<DigitalPage/>, document.getElementById("root"))
+// ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"))
