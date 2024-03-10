@@ -52,12 +52,14 @@ function Page(){
 };
 function Home(){
     return (
-        <section>
-            <img  src={myImage} className="myImage" alt="myImage"/>
+        <section className="home">
             <h1>Gard Alson</h1>
+            <img  src={myImage} className="myImage" alt="myImage"/>
             <p>Full Stack Developer</p>
-            <a href="#" type="button">Linkedin</a>
-            <a href="#" type="button">Twitter</a>
+            <div className="button-container">
+                <a href="#" type="button" >Linkedin</a>
+                <a href="#" type="button">Twitter</a> 
+            </div>
         </section>
     )
 
