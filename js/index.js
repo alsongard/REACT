@@ -1,8 +1,10 @@
-import React  from "react";
-import ReactDOM from "react-dom";
-import "./style.css";
+// import React  from "react";
+// import ReactDOM from "react-dom";
+/*
+import "../css/profileSetup.css";
 import logo from "./logo192.png";
 import myImage from "./Programmer.jpg";
+*/
 function HeaderInfo(){
     return(
         <header className="header">
@@ -89,5 +91,8 @@ function DigitalPage(){
         </div>
     )
 };
-ReactDOM.render(<DigitalPage/>, document.getElementById("root"))
-// ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"))
+// ReactDOM.render(<Home/>, document.getElementById("root"))
+ReactDOM.render(<Home/>, document.getElementById("root"))
+
+
+// ReactDOM.render(<h1>Hello  World</h1>,document.getElementById("root"));
