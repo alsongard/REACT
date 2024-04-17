@@ -8,7 +8,6 @@
     border-radius: 10px;
 }
 h1{
-    text-align: center;
     padding:10px;
 }
 p{
@@ -30,6 +29,7 @@ header{
 header h3, h4{
     font-size: 27px;
     letter-spacing:0.3cm;
+    text-decoration: underline;
 }
 .home{
     background-color:rgb(160, 125, 12);
