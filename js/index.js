@@ -4,7 +4,7 @@ function HelloWorld(){
 function Home(){
     return(
         <div>
-            <section>
+            <section className="centerText">
                 <h1>Welcome Back Gard</h1>
             </section>
         </div>
