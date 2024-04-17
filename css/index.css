@@ -1,3 +1,8 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 .centerText{
     background-color:blue;
     border-radius: 10px;
@@ -8,4 +13,41 @@ h1{
 }
 p{
     text-align: center;
+}
+.logo{
+    border-radius: 50%;
+    width:50px;
+    height: auto;
+    padding-top:5px;
+}
+header{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px;
+}
+header h3, h4{
+    font-size: 27px;
+    letter-spacing:0.3cm;
+}
+.home{
+    background-color:rgb(160, 125, 12);
+    text-align: left;
+    margin:50px;
+    padding:10px 50px;
+    border-radius: 10px;
+}
+.home h1{
+    text-align: unset;
+}
+.facts{
+    background-color:rgb(160, 125, 12);
+    text-align: left;
+    margin:50px;
+    padding:10px 50px;
+    border-radius: 10px;
+}
+.facts h1{
+    text-align: unset;
 }
