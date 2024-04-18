@@ -1,5 +1,8 @@
-import userImage from "./swordGun.jpg"
-import "./profile.css"
+import userImage from "./swordGun.jpg";
+import "./profile.css";
+import { FaGithub } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+
 function Home(){
     return(
         <section className="home">
@@ -8,8 +11,8 @@ function Home(){
                 <h1>Gard Alson</h1>
                 <p>Full Stack Developer</p>
                 <div className="socialIcons">
-                    <a href="#">Twitter</a>
-                    <a href="#">Github</a>
+                    <label><a href="#"><FaXTwitter/> Twitter  </a></label>
+                    <label><a href="#"><FaGithub/> Github </a></label>
                 </div>
             </div>
         </section>

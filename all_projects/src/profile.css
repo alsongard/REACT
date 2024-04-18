@@ -10,9 +10,11 @@ body{
     margin-bottom:10px;
 }
 .socialIcons{
-    margin:6px 0;
+    margin:10px 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly ;
+    align-items: center;
+
 }
 .socialIcons a{
     text-decoration: none;
@@ -22,8 +24,10 @@ body{
     padding:5px 15px;
     border-radius: 5px;
 }
+
 .socialIcons a:hover{
-    color:blue;
+    color:white;
+    background-color: black;
 }
 
 .container{
