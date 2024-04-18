@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba( 28, 40, 51);
+}
+.home{
+    margin-bottom:10px;
+}
+.socialIcons{
+    margin:6px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialIcons a{
+    text-decoration: none;
+    color:black;
+    border:none;
+    background-color: white;
+    padding:5px 15px;
+    border-radius: 5px;
+}
+.socialIcons a:hover{
+    color:blue;
+}
+
+.container{
+    text-align: center;
+}
+.user-img{
+    margin-bottom:10px;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+p{
+    text-align:center;
+}
+#root{
+    background-color: rgb( 153, 163, 164 );
+    margin:80px auto;
+    padding:80px 50px 50px;
+    width:500px;
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+.about, .about p{
+    text-align: left;
+}
+.interest p{
+    text-align: unset;
+}
+.interest{
+    text-align: left;
+}
