@@ -3,3 +3,33 @@
 	padding:0;
 	box-sizing:border-box;
 }
+header{
+	padding:5px 0 5px 20px;
+	box-shadow:0 2.9825px 7.4564px rgba(0,0,0, 0.1);
+	/* background-color: red; */
+	/* box-shadow:0  5px rgba( 166, 172, 175 ,0.3); */
+}
+.logo{
+	width:120px;
+}
+.hero{
+	/* border: 2px solid red; */
+}
+.hero-content{
+	/* border:3px solid yellow; */
+	width:1200px;
+	max-width: 90%;
+	margin:5px auto 0;
+}
+.bnbStack{
+	width:580px;
+	max-width:80%;
+	/* border:2px solid black; */
+	margin:0 auto;
+	display: block;
+}
+.hero-text{
+	width:580px;
+	max-width:80%;
+	margin: 2px auto 0;
+}
