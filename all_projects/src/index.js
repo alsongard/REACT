@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Contact from "./Components/ContactApp.js";
 import Page from "./Components/AirBnB.js";
 // import App from './App';
 // import Page from "./profile"
@@ -9,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Page/>
+    <Contact/>
   </React.StrictMode>
 );
 

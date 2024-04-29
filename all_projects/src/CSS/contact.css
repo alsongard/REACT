@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:1300px;
+    justify-content: space-evenly;
+    margin: 40px auto;
+}
+.contact-container{
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(172, 90, 90, 0.7);
+}
+.contact-container img{
+    width:280px;
+    height: 280px;
+    border-radius: 10px;
+}
+.info-group{
+    margin-top:10px;
+    margin-left:10px;
+    display:flex;
+    gap:1em;
+}
+h3{
+    margin-left:10px;
+}
