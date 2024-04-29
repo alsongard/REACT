@@ -7,12 +7,12 @@ function Home(){
     return(
         <section className="home">
             <div className="container">
-                <img className="user-img" src={userImage} alt="user-image"/>
+                <img className="user-img" src={userImage} alt="user"/>
                 <h1>Gard Alson</h1>
                 <p>Full Stack Developer</p>
                 <div className="socialIcons">
-                    <label><a href="#"><FaXTwitter/> Twitter  </a></label>
-                    <label><a href="#"><FaGithub/> Github </a></label>
+                    <label><a href="https://"><FaXTwitter/> Twitter  </a></label>
+                    <label><a href="https://"><FaGithub/> Github </a></label>
                 </div>
             </div>
         </section>

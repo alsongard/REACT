@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Page from "./Components/AirBnB.js"
+import Page from "./Components/AirBnB.js";
 // import App from './App';
 // import Page from "./profile"
 import reportWebVitals from './reportWebVitals';
