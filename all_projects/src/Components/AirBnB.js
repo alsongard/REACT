@@ -1,6 +1,9 @@
-import logo from "../images/AirbnbLogo.jpg"
-import bnbImages from "../images/AirBnB.png"
-import "../CSS/airbnb.css"
+import { FaStar } from "react-icons/fa6";
+import logo from "../images/AirbnbLogo.jpg";
+import trainer from "../images/pexels-mikhail-nilov-6740056(1).jpg";
+import gymrun from "../images/pexels-willpicturethis-1954524.jpg";
+import bnbImages from "../images/AirBnB.png";
+import "../CSS/airbnb.css";
 function NavBar(){
     return (
         <header>
@@ -21,11 +24,34 @@ function Hero(){
         </section>
     )
 }
+function Card(){
+    return (
+        <section className="card-section">
+            <div className="card-container">
+                <div className="card-sub">
+                    <img src={trainer} alt="trainer"/>
+                    <div className="info-group">
+                        <a href="https://">5.0(6)<FaStar/></a>
+                        <p>U.S.A</p>
+                    </div>  
+                </div>
+                <div className="card-sub">
+                    <img src={gymrun} alt="trainer"/>
+                    <div className="ifno-group">
+                        <a href="https://">5.0(6)<FaStar/></a>
+                        <p>Australia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
 function Page(){
     return(
         <div>
             <NavBar/>
             <Hero/>
+            <Card/>
         </div>
     )
 }
