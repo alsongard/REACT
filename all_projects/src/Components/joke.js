@@ -4,6 +4,7 @@ function Joke(props){
         <div className="jokes">
             <p>{props.setup}</p>
             <p>{props.punchline}</p>
+            <hr/>
         </div>
     )
 }

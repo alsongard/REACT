@@ -1,35 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Joke from "./Components/joke.js";
-// import ContactUnit from './Components/contactUnit.js';
-// import Contact from "./Components/ContactApp.js";
+import ContactUnit from './Components/contactUnit.js';
+import Contact from "./Components/ContactApp.js";
 import AirBnBPage from "./Components/AirBnB.js";
-// import App from './App';
-// import Page from "./profile"
+import JokeApp  from './Components/jokeApp.js';
+import App from './App';
+// import  ProfilePage from "./profile";
 import reportWebVitals from './reportWebVitals';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Joke
-      setup="I got my daughter a fridge for her birthday."
-      punchline="I can't wait to see her face light up when she opens it."
-    />
-    <Joke
-      setup="How did the hacker escape the police."
-      punchline="He just ransomware."
-    />
-    <Joke
-      setup="Why don't pirate travel on mountain roads."
-      punchline="Scurvy."
-    />
-    <Joke
-      setup="Why do bees stay in a hive in winter"
-      punchline="Swarm."
-    />
+    <JokeApp/>
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -62,3 +47,19 @@ reportWebVitals();
     />
 
 */
+{/* <Joke
+setup="I got my daughter a fridge for her birthday."
+punchline="I can't wait to see her face light up when she opens it."
+/>
+<Joke
+setup="How did the hacker escape the police."
+punchline="He just ransomware."
+/>
+<Joke
+setup="Why don't pirate travel on mountain roads."
+punchline="Scurvy."
+/>
+<Joke
+setup="Why do bees stay in a hive in winter"
+punchline="Swarm."
+/> */}

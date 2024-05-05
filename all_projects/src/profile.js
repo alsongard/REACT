@@ -1,5 +1,5 @@
 import userImage from "./swordGun.jpg";
-import "./profile.css";
+import "./CSS/profile.css";
 import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -35,7 +35,7 @@ function Interest(){
     )
 }
 
-function Page(){
+function ProfilePage(){
     return(
         <div>
             <Home/>
@@ -45,4 +45,4 @@ function Page(){
 
     )
 }
-export default Page;
+export default ProfilePage;
