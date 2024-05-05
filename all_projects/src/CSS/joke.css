@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+}
+.jokes{
+    margin:30px 60px;
+}
+.jokes p{
+    font-size:23px;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Joke from "./Components/joke.js";
 // import ContactUnit from './Components/contactUnit.js';
 // import Contact from "./Components/ContactApp.js";
-import Page from "./Components/AirBnB.js";
+import AirBnBPage from "./Components/AirBnB.js";
 // import App from './App';
 // import Page from "./profile"
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +12,22 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Page/>
+    <Joke
+      setup="I got my daughter a fridge for her birthday."
+      punchline="I can't wait to see her face light up when she opens it."
+    />
+    <Joke
+      setup="How did the hacker escape the police."
+      punchline="He just ransomware."
+    />
+    <Joke
+      setup="Why don't pirate travel on mountain roads."
+      punchline="Scurvy."
+    />
+    <Joke
+      setup="Why do bees stay in a hive in winter"
+      punchline="Swarm."
+    />
   </React.StrictMode>
 );
 

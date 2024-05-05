@@ -26,7 +26,7 @@ function Hero(){
     )
 }
 
-function Page(){
+function AirBnBPage(){
     return(
         <div>
             <NavBar/>
@@ -49,4 +49,4 @@ function Page(){
         </div>
     )
 }
-export default Page
+export default AirBnBPage
