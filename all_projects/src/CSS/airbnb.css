@@ -64,4 +64,9 @@ header{
 }
 .info-group a{
 	text-decoration: none;
+	color:black;
+	
+}
+.info-group a:hover{
+	color:rgba(106, 224, 185, 0.726);
 }
