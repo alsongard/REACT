@@ -31,13 +31,13 @@ function Card(){
                 <div className="card-sub">
                     <img src={trainer} alt="trainer"/>
                     <div className="info-group">
-                        <a href="https://">5.0(6)<FaStar/></a>
+                        <a href="https://"><FaStar/> 5.0(6)</a>
                         <p>U.S.A</p>
                     </div>  
                 </div>
                 <div className="card-sub">
                     <img src={gymrun} alt="trainer"/>
-                    <div className="ifno-group">
+                    <div className="info-group">
                         <a href="https://">5.0(6)<FaStar/></a>
                         <p>Australia</p>
                     </div>

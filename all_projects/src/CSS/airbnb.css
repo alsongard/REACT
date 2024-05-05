@@ -33,3 +33,32 @@ header{
 	max-width:80%;
 	margin: 2px auto 0;
 }
+.card-section{
+	margin-bottom:20px;
+}
+.card-container{
+	display: flex;
+	width:700px;
+	/* border:2px solid black; */
+	margin:0 auto;
+	gap:3rem;
+	justify-content: center;
+	/* justify-content: space-evenly; */
+}
+.card-sub{
+	margin:25px 0 0;
+}
+.card-container img{
+	width:220px;
+	height: 300px;
+	border-radius: 10px;
+}
+.info-group{
+	margin-top:10px;
+	display: flex;
+	gap:1rem;
+	margin-left:10px;
+}
+.info-group a{
+	text-decoration: none;
+}
