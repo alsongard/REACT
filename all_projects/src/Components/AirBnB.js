@@ -1,9 +1,10 @@
-import { FaStar } from "react-icons/fa6";
 import logo from "../images/AirbnbLogo.jpg";
-import trainer from "../images/pexels-mikhail-nilov-6740056(1).jpg";
-import gymrun from "../images/pexels-willpicturethis-1954524.jpg";
 import bnbImages from "../images/AirBnB.png";
 import "../CSS/airbnb.css";
+import Card from "./card-component";
+//import trainer from "../images/pexels-mikhail-nilov-6740056(1).jpg";
+// import { FaStr } from "react-icons/fa6";
+// import gymrun from "../images/pexels-willpicturethis-1954524.jpg";
 function NavBar(){
     return (
         <header>
@@ -24,34 +25,27 @@ function Hero(){
         </section>
     )
 }
-function Card(){
-    return (
-        <section className="card-section">
-            <div className="card-container">
-                <div className="card-sub">
-                    <img src={trainer} alt="trainer"/>
-                    <div className="info-group">
-                        <a href="https://"><FaStar/> 5.0(6)</a>
-                        <p>U.S.A</p>
-                    </div>  
-                </div>
-                <div className="card-sub">
-                    <img src={gymrun} alt="trainer"/>
-                    <div className="info-group">
-                        <a href="https://">5.0(6)<FaStar/></a>
-                        <p>Australia</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-}
+
 function Page(){
     return(
         <div>
             <NavBar/>
-            <Hero/>
-            <Card/>
+            <Hero/> {/*main section */}
+            <Card 
+                mainimage="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
+                mainimage1="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"
+                mainimage2="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg"
+                mainimage3="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg"
+                image="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"
+                rating={4.9}
+                rating1={4.8}
+                rating2={4.7}
+                rating3={4.6}
+                country="United States"
+                country1="Canada"
+                country2="Russia"
+                country3="China"
+            />
         </div>
     )
 }

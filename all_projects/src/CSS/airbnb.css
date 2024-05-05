@@ -34,12 +34,13 @@ header{
 	margin: 2px auto 0;
 }
 .card-section{
+	/* border:2px solid black; */
 	margin-bottom:20px;
 }
 .card-container{
 	display: flex;
-	width:700px;
-	/* border:2px solid black; */
+	width:1200px;
+	/* border:2px solid blueviolet; */
 	margin:0 auto;
 	gap:3rem;
 	justify-content: center;
@@ -47,6 +48,8 @@ header{
 }
 .card-sub{
 	margin:25px 0 0;
+	/* border:2px solid red; */
+
 }
 .card-container img{
 	width:220px;
@@ -56,7 +59,7 @@ header{
 .info-group{
 	margin-top:10px;
 	display: flex;
-	gap:1rem;
+	gap:0.7rem;
 	margin-left:10px;
 }
 .info-group a{
