@@ -2,6 +2,7 @@ import logo from "../images/AirbnbLogo.jpg";
 import bnbImages from "../images/AirBnB.png";
 import "../CSS/airbnb.css";
 import Card from "./card-component";
+import AirbnbApp from "./airbnbApp";
 //import trainer from "../images/pexels-mikhail-nilov-6740056(1).jpg";
 // import { FaStr } from "react-icons/fa6";
 // import gymrun from "../images/pexels-willpicturethis-1954524.jpg";
@@ -27,10 +28,22 @@ function Hero(){
 }
 
 function AirBnBPage(){
+    return (
+        <div>
+            <NavBar/>
+            <Hero/>
+            <section className="data-container">
+                <AirbnbApp/>
+            </section>
+        </div>
+    )
+}
+/*
+function AirBnBPage(){
     return(
         <div>
             <NavBar/>
-            <Hero/> {/*main section */}
+            <Hero/> {main section } comment these when working with these component
             <Card 
                 mainimage="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
                 mainimage1="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"
@@ -49,4 +62,5 @@ function AirBnBPage(){
         </div>
     )
 }
+*/
 export default AirBnBPage
