@@ -33,25 +33,37 @@ header{
 	max-width:80%;
 	margin: 2px auto 0;
 }
-.card-section{
-	/* border:2px solid black; */
-	margin-bottom:20px;
+.data-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* background-color: red; */
+	width:1200px;
+	margin:0 auto;
 }
+.card-section{
+	border:2px solid black;
+	/* margin-bottom:20px; */
+}
+/* WARNING :: DO NOT USE
 .card-container{
 	display: flex;
 	width:1200px;
-	/* border:2px solid blueviolet; */
-	margin:0 auto;
+	border:2px solid blueviolet; 
 	gap:3rem;
 	justify-content: center;
-	/* justify-content: space-evenly; */
-}
+	justify-content: space-evenly; 
+}these element is removed in the js file only reuse it */
 .card-sub{
 	margin:25px 0 0;
-	/* border:2px solid red; */
+	border:2px solid red;
+	display: flex;
+	flex-direction: column;
+	width:320px;
+	flex-wrap: wrap;
 
 }
-.card-container img{
+.card-sub img{	
 	width:220px;
 	height: 300px;
 	border-radius: 10px;
