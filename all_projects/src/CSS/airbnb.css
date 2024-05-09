@@ -51,6 +51,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	padding:10px;
+	position: relative;
 }
 
 .card-sub img{	
@@ -72,6 +73,15 @@ header{
 .info-group a:hover{
 	color:rgba(106, 224, 185, 0.726);
 }
+.slots{
+	position:absolute;
+	color:white;
+	top:20px;
+	left:63px;
+	background-color: black;
+	border-radius: 5px;
+	padding:3px 20px;
+}
 /* .hero{
 	border: 2px solid red; 
 } */
@@ -87,4 +97,3 @@ header{
 	margin:0 auto;
 	/* justify-content: space-evenly;  
 }these element is removed in the js file only reuse it */
-

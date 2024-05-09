@@ -2,8 +2,16 @@ import { FaStar } from "react-icons/fa6";
 import "../CSS/airbnb.css";
 
 function NewCard(prop){
+    let badgeCard ;
+    if (prop.slots === 0){
+        badgeCard = "SOLD OUT";
+    }
+    else if (prop.country === "Online"){
+        badgeCard = "ONLINE";
+    }
     return (
         <div className="card-sub">
+            {badgeCard &&  <div className="slots"> <p>{badgeCard}</p></div>}
             <img src={prop.mainimage} alt="trainer"/>
             <div className="info-group">
                 <a href="https://"><FaStar/> {prop.rating} ({prop.review})</a>
