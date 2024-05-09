@@ -3,6 +3,32 @@ import "../CSS/airbnb.css";
 
 function NewCard(prop){
     return (
+        <div className="card-sub">
+            <img src={prop.mainimage} alt="trainer"/>
+            <div className="info-group">
+                <a href="https://"><FaStar/> {prop.rating} ({prop.review})</a>
+                <p>{prop.country}</p>
+            </div>  
+            <div className="info-group">
+                <p>{prop.message}</p>
+            </div>
+            <div className="info-group">
+                <div className="holder">
+                    <p>Available spots</p>
+                    <p> {prop.spots}</p>
+                </div>
+                <div className="holder">
+                    <p>Price</p>
+                    <p>{prop.cost} $</p>
+                </div>
+                
+            </div>
+        </div>
+    )
+}
+
+export default NewCard
+/*
         <section className="card-section">
             <div className="card-sub">
                 <img src={prop.mainimage} alt="trainer"/>
@@ -16,7 +42,4 @@ function NewCard(prop){
                 </div>
             </div>
         </section>
-    )
-}
-
-export default NewCard
+*/

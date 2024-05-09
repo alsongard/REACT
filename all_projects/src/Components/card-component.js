@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa6";
-import trainer from "../images/pexels-mikhail-nilov-6740056(1).jpg";
-import gymrun from "../images/pexels-willpicturethis-1954524.jpg";
+// import trainer from "../images/pexels-mikhail-nilov-6740056(1).jpg";
+// import gymrun from "../images/pexels-willpicturethis-1954524.jpg";
 import "../CSS/airbnb.css";
 function Card(prop){
     return (

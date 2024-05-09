@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import AirbnbApp from './Components/airbnbApp.js';
 import ContactUnit from './Components/contactUnit.js';
 import Contact from "./Components/ContactApp.js";
 import AirBnBPage from "./Components/AirBnB.js";

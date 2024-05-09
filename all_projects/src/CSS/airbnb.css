@@ -12,9 +12,6 @@ header{
 .logo{
 	width:120px;
 }
-/* .hero{
-	border: 2px solid red; 
-} */
 .hero-content{
 	/* border:3px solid yellow; */
 	width:1200px;
@@ -33,52 +30,61 @@ header{
 	max-width:80%;
 	margin: 2px auto 0;
 }
-.data-container{
+.data_container{
+	/* background-color: rgb(192, 37, 37); */
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	/* background-color: red; */
+	flex-wrap:wrap;
 	width:1200px;
 	margin:0 auto;
+	gap:1em;
+	align-items: center;
+	justify-content:center;
 }
-.card-section{
+.card-sub{
+	margin:25px 0 0;
+	width:320px;
+	max-width: 100%;
+	/* border:2px solid black; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding:10px;
+}
+
+.card-sub img{	
+	width:229px;
+	height: 300px;
+	border-radius: 10px;
+}
+.info-group{
+	width:229px;
+	/* background-color: red; */
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+}
+.info-group a{
+	text-decoration: none;
+	color:black;	
+}
+.info-group a:hover{
+	color:rgba(106, 224, 185, 0.726);
+}
+/* .hero{
+	border: 2px solid red; 
+} */
+/* .card-section{
 	border:2px solid black;
-	/* margin-bottom:20px; */
-}
-/* WARNING :: DO NOT USE
+} */
+/* WARNING :: DO NOT USE : only use for the card_component module
 .card-container{
 	display: flex;
 	width:1200px;
 	border:2px solid blueviolet; 
 	gap:3rem;
-	justify-content: center;
-	justify-content: space-evenly; 
+	margin:0 auto;
+	/* justify-content: space-evenly;  
 }these element is removed in the js file only reuse it */
-.card-sub{
-	margin:25px 0 0;
-	border:2px solid red;
-	display: flex;
-	flex-direction: column;
-	width:320px;
-	flex-wrap: wrap;
 
-}
-.card-sub img{	
-	width:220px;
-	height: 300px;
-	border-radius: 10px;
-}
-.info-group{
-	margin-top:10px;
-	display: flex;
-	gap:0.7rem;
-	margin-left:10px;
-}
-.info-group a{
-	text-decoration: none;
-	color:black;
-	
-}
-.info-group a:hover{
-	color:rgba(106, 224, 185, 0.726);
-}

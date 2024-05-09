@@ -26,18 +26,23 @@ function Hero(){
         </section>
     )
 }
-
 function AirBnBPage(){
     return (
         <div>
             <NavBar/>
             <Hero/>
-            <section className="data-container">
+            <section className="data_container">
                 <AirbnbApp/>
             </section>
         </div>
     )
 }
+export default AirBnBPage
+/*
+<section className="data-container">
+    <AirbnbApp/>
+</section>
+*/
 /*
 function AirBnBPage(){
     return(
@@ -63,4 +68,3 @@ function AirBnBPage(){
     )
 }
 */
-export default AirBnBPage
