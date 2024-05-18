@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --header-color:white;
+}
+header{
+    padding:5px 20px;
+	box-shadow:0 2.9825px 7.4564px rgba(0,0,0, 0.1);
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb( 46, 64, 83 );
+}
+.nav-bar{
+    width:300px;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color:var(--header-color);
+    font-size:22px;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width:50px;
+    height: auto;
+    border-radius: 55%;
+}
