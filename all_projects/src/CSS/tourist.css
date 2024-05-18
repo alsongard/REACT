@@ -34,11 +34,6 @@ header{
     border-radius: 55%;
 }
 .touristInfo{
-    width:800px;
-    max-width: 100%;
-    margin:20px auto;
-    border-radius: 10px;
-    background-color: aliceblue;
     padding:20px;
     display: flex;
     gap:2rem;
@@ -57,4 +52,11 @@ header{
     width:130px;
     max-width: 100%;
     /* background-color: red; */
+}
+.touristHolder{
+    background-color: aliceblue;
+    width:800px;
+    max-width: 100%;
+    margin:20px auto;
+    border-radius: 10px;
 }

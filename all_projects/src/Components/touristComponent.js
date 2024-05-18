@@ -3,17 +3,17 @@ import "../CSS/tourist.css";
 function TouristComponent(prop){
     return (
         <section className="touristInfo">
-            <div class="imageHolder">
-                <img src={prop.imageUrl} alt={prop.altImage}/>
+            <div className="imageHolder">
+                <img src={prop.items.imageUrl} alt={prop.items.altImg}/>
             </div>
             <div className="location-Data">
-                <p>{prop.locationName}</p>
-                <h2>{prop.title}</h2>
+                <p>{prop.items.locationName}</p>
+                <h2>{prop.items.title}</h2>
                 <div className="dates">
-                    <p>{prop.startDate}</p>
-                    <p>{prop.endDate}</p>
+                    <p>{prop.items.startDate}</p>
+                    <p>{prop.items.endDate}</p>
                 </div>
-                <p>{prop.description}</p>
+                <p>{prop.items.description}</p>
             </div>    
         </section>
     )

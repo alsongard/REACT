@@ -2,7 +2,7 @@ export default [
     {
         id:1,
         imageUrl: "https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=600",
-        altImg:"mount Fuji",
+        altImg:"Mount Fuji",
         location: "Japan",
         title: "Mountain Fuji",
         googleMapsUrl: "https...",
@@ -28,8 +28,8 @@ export default [
         location:"Paris",
         title:"Ifel Tower",
         googleMapsUrl:"",
-        startDat:"16 Aug 2023",
-        endDat:"27 Sep, 2023",
+        startDate:"16 Aug 2023",
+        endDate:"27 Sep, 2023",
         description:"he Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France."
     },
     {

@@ -21,7 +21,9 @@ function TouristPage(){
     return(
         <div>
             <HeaderInfo/>
-            <TouristApp/>
+            <section className="touristHolder">
+                <TouristApp/>
+            </section>
         </div>
     )
 }
