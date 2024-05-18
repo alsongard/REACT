@@ -1,0 +1,13 @@
+.imageHolder{
+    width:300px;
+    height:450px;
+    margin: 50px auto ;
+    padding:0;
+    border-radius: 10px;
+}
+.user-img{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+
+}
