@@ -4,7 +4,7 @@ function TouristComponent(prop){
     return (
         <section className="touristInfo">
             <div class="imageHolder">
-                <img src={prop.imageUrl} alt={prop.alt}/>
+                <img src={prop.imageUrl} alt={prop.altImage}/>
             </div>
             <div className="location-Data">
                 <p>{prop.locationName}</p>
