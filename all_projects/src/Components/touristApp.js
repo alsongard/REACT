@@ -5,11 +5,6 @@ function TouristApp(){
     const touristElement = touristData.map(function(dataItems){
         return <TouristComponent key={dataItems.id} items={dataItems}/>
     })
-    return (
-            touristElement
-
-    )
+    return (touristElement)
 }
-
-
 export default TouristApp;
