@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import AirbnbApp from './Components/airbnbApp.js';
-import ContactUnit from './Components/contactUnit.js';
-import Contact from "./Components/ContactApp.js";
-import AirBnBPage from "./Components/AirBnB.js";
-import JokeApp  from './Components/jokeApp.js';
-import App from './App';
+// import './index.css';
+// import AirbnbApp from './Components/airbnbApp.js';
+// import ContactUnit from './Components/contactUnit.js';
+// import Contact from "./Components/ContactApp.js";
+// import AirBnBPage from "./Components/AirBnB.js";
+// import JokeApp  from './Components/jokeApp.js';
+// import App from './App';
+import TouristPage from './Components/touristPage.js';
+
 // import  ProfilePage from "./profile";
 import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AirBnBPage/>
+    <TouristPage/>
   </React.StrictMode>
 );
 
