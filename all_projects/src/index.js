@@ -7,14 +7,15 @@ import ReactDOM from 'react-dom/client';
 // import AirBnBPage from "./Components/AirBnB.js";
 // import JokeApp  from './Components/jokeApp.js';
 // import App from './App';
-import TouristPage from './Components/touristPage.js';
+import MemePage from './Components/memePage.js';
+// import TouristPage from './Components/touristPage.js';
 
 // import  ProfilePage from "./profile";
 import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TouristPage/>
+    <MemePage/>
   </React.StrictMode>
 );
 
