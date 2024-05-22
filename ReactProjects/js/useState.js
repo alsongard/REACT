@@ -1,8 +1,8 @@
 function App(){
-    const [isImportant, setIsImportant] = React.useState("No");
+    const [isImportant, setisImportant] = React.useState("No");
 
     function handleCheck(){
-        setIsImportant("Yes");
+        setisImportant("Yes");
     }
     
     return (
