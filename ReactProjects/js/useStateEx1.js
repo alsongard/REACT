@@ -13,7 +13,8 @@ function App(){
 	}
 	function handleSub(){
 		// setmyValue(myValue - 1);
-        setmyValue(subValue(myValue));
+        // setmyValue(subValue(myValue));
+		setmyValue((myValue)=>myValue - 1);
 	}
 	return (
 		<div>
