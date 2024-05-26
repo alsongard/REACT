@@ -4,19 +4,19 @@ import ReactDOM from 'react-dom/client';
 // import AirbnbApp from './Components/airbnbApp.js';
 // import ContactUnit from './Components/contactUnit.js';
 // import Contact from "./Components/ContactApp.js";
-import AirBnBPage from "./Components/AirBnB.js";
+// import AirBnBPage from "./Components/AirBnB.js";
 // import JokeApp  from './Components/jokeApp.js';
 // import App from './App';
-
-import MemePage from './Components/memePage.js';
+// import MemePage from './Components/memePage.js';
 // import TouristPage from './Components/touristPage.js';
-
 // import  ProfilePage from "./profile";
+import Challenges  from './Components/challenges.js';
+
 import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AirBnBPage/>
+    <Challenges/>
   </React.StrictMode>
 );
 //<MemePage/>
