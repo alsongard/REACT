@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.holder{
+    margin:20px auto;
+    background-color: rgb(175, 250, 175);
+    border-radius:30px;
+    padding: 50px 20px;
+    width:50%;
+    display: block;
+}
+button{
+    /* background-color: rgb(131, 186, 236); */
+    padding:5px 10px;
+    border:2px solid brown;
+    border-radius: 10px;
+}
+.holder h3{
+    margin-bottom: 10px;
+    display: grid;
+}

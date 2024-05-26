@@ -32,7 +32,7 @@ function  ThingApp(){
         <div>
             <button onClick={addItem}>Add Item</button>
             {thingsElements}
-            <p>Is result given {result[0]}</p>
+            <p>Is result given {result[0]}</p>{/** this returns elements of the React.useState in 0 : variableName, 1: functionName*/}
         </div>
     )
 }
