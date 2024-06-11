@@ -4,13 +4,14 @@
 	box-sizing:border-box;
 }
 header{
-	padding:5px 0 5px 20px;
+	padding:3px 0 0 20px;
 	box-shadow:0 2.9825px 7.4564px rgba(0,0,0, 0.1);
 	/* background-color: red; */
 	/* box-shadow:0  5px rgba( 166, 172, 175 ,0.3); */
 }
 .logo{
-	width:120px;
+	width:100px;
+	height: auto;
 }
 .hero-content{
 	/* border:3px solid yellow; */
