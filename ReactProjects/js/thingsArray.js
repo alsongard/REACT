@@ -1,4 +1,4 @@
-function ThingApp(){
+ function ThingApp(){
 	/*function changeValue(){
 		setThings( (value)=>{
 			value = value + 1;
