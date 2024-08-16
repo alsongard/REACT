@@ -1,2 +1,6 @@
 ./all_projects/package-lock.json
 ./all_projects/package.json
+
+
+./props/package.json
+./props/package-lock.json
