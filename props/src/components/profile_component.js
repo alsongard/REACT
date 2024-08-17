@@ -11,7 +11,7 @@ function ProfileComponent(prop)
                 <p>Age : {prop.age}</p>
                 <p>Job : {prop.job}</p>
             </div>
-            <p id="loc">Location :{prop.location}</p>
+            <p >Location :{prop.location}</p>
         </div>
     )
 };

@@ -80,10 +80,6 @@ button a{
     text-align: left;
     /* border:2px solid black;*/
 }
-#loc
-{
-    text-align: unset;
-}
 footer{
     color:white;
     background: pink;
