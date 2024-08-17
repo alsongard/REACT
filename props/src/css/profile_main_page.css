@@ -1,0 +1,116 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+header{
+    background: pink;
+    color:white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 50px 10px 40px;
+}
+.nav-bar
+{
+    display: flex;
+    /* background-color: red; */
+    width:300px;
+    list-style: none;
+    justify-content: space-between;
+}
+.nav-bar li a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+button{
+    background: rgba(199, 15, 46, 0.767);
+    color:white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.profile-section
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 20px 50px; */
+    height: 55vh;
+    /* border:2px solid black; */
+    margin:50px auto;
+}
+.user-container
+{
+    border:2px solid black;
+    padding:25px 50px;
+    border-radius: 10px;
+    
+}
+.user_img
+{
+    width: 250px;
+    align-items: center;
+    display: block;
+    border-radius: 50%;
+    margin:0 auto;
+    border:none;
+    /* border:2px solid black; */
+}
+.user-details
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    text-align: left;
+    /* border:2px solid black;*/
+}
+#loc
+{
+    text-align: unset;
+}
+footer{
+    color:white;
+    background: pink;
+    padding:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-navbar
+{
+    list-style: none;
+}
+.footer-navbar li a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+.social-media
+{
+    list-style: none;
+}
+.social-media li a
+{
+    color:white;
+    text-decoration: none;
+    /* font-size: 22px; */
+    /* margin-right: 20px; */
+}
