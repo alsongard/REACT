@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    background: rgb(98, 98, 212);
+    background-color: purple;
     height:50px;
     padding:10px 20px;
     display: flex;
@@ -20,7 +20,7 @@ header{
 .home form{
     width:900px;
     max-width: 100%;
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(226, 78, 78);
     margin:50px auto;
     padding:100px;
     border-radius: 10px;

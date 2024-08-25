@@ -1,5 +1,4 @@
 import React from "react";
-import MemesData from "./memesData.js";
 import memesData from "./memesData.js";
 
 function Meme(){
@@ -8,7 +7,7 @@ function Meme(){
     // }
     /*function getMemeImage(){
         const memeArray = MemesData.data.memes;
-        console.log(memeArray);
+        console.log(memeArray); 
         const randomIndex = Math.floor(Math.random() * memeArray.length);
         console.log(randomIndex);
         setMemeImage(memeArray[randomIndex].url);
@@ -23,10 +22,10 @@ function Meme(){
     function getMemeImage(){
         const memesArray = allMemeImages.data.memes;
         const randomIndexNumber = Math.floor(Math.random() * memesArray.length);
-        // console.log(randomIndexNumber);
+        console.log(randomIndexNumber);
         const url = memesArray[randomIndexNumber].url;
         // console.log(url);
-        setMeme((prevMeme)=>{
+        setMeme((prevMeme)=>{ //prevMeme is the variable on the first react state **meme**
             return {
                 ...prevMeme, 
                 randomImage : url
@@ -43,7 +42,8 @@ function Meme(){
             </form>
             <button onClick={getMemeImage}>Get new meme image</button>
             <div className="imageHolder">
-                <img src={meme.randomImage} className="memeImg" alt="meme"/>
+                <img src={meme.randomImage}  className="memeImg" alt="meme"/>
+                {/* in the above statement meme is an object and random image is a property */}
             </div>
         </section>
     )
