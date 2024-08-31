@@ -4,23 +4,23 @@ export default [
 		on: true
 	},
 	{
-		id: 2,
+		id:2,
 		on: false
 	},
 	{
-		id: 3,
+		id:3,
 		on: true
 	},
 	{
-		id: 4,
+		id:4,
 		on: true
 	},
 	{
-		id: 5,
+		id:5,
 		on: false
 	},
 	{
-		id: 6,
+		id:6,
 		on: false
 	}
 ]

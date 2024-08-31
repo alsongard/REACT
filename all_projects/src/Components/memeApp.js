@@ -1,6 +1,8 @@
 import React from "react";
 import memesData from "./memesData.js";
 
+
+//start of the function to be exported and used in memePage
 function Meme(){
     // function handler(){
     //     console.log("Welcome to Project Meme!")

@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom/client';
 // import JokeApp  from './Components/jokeApp.js';
 // import App from './App';
 // import MemePage from './Components/memePage.js';
-import CountProp from './Components/countProps.js';
+// import CountProp from './Components/countProps.js';
+import BoxApp from './Components/boxApp.js';
 // import TouristPage from './Components/touristPage.js';
 // import  ProfilePage from "./profile";
 // import ProfileUser from './Components/reactObjects.js';
@@ -18,7 +19,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CountProp/>
+    <BoxApp/>
   </React.StrictMode>
 );
 reportWebVitals();
@@ -55,7 +56,8 @@ reportWebVitals();
     />
 
 */
-{/* <Joke
+/*
+{ <Joke
 setup="I got my daughter a fridge for her birthday."
 punchline="I can't wait to see her face light up when she opens it."
 />
@@ -70,4 +72,4 @@ punchline="Scurvy."
 <Joke
 setup="Why do bees stay in a hive in winter"
 punchline="Swarm."
-/> */}
+/> */

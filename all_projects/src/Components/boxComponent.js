@@ -2,9 +2,11 @@
 import React from "react";
 function BoxComponent(props)
 {
-    const [onValue, setOnValue] = React.useState(props.on); //derived state
-    function changeValue()
-    {
+    // console.log(props.boxId);
+    // console.log(props.boxBool);
+    // const [onValue, setOnValue] = React.useState(props.on); //derived state
+    /*function changeValue()
+    {f
         setOnValue((onValue)=>{
             if (onValue === false)
             {
@@ -15,13 +17,14 @@ function BoxComponent(props)
                 return false;
             }
         })
-    }
-    const style = 
+    }*/
+    const styles = 
     {
-        backgroundColor: onValue ? "#222222" : "transparent"
+        backgroundColor: props.on ?  "#222222" : "transparent"
     };
+    
     return (
-        <div style={style}  className="box" onClick={changeValue}>
+        <div style={styles} className="box"onClick={()=>props.toggle(props.boxId)} >
         </div>
     )
 }

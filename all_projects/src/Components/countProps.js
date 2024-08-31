@@ -1,4 +1,4 @@
-//Child component recieving a state value
+//Child component recieving a state value via props
 import React from "react";
 import CountComponent from "./countComponent";
 function CountProp(){
