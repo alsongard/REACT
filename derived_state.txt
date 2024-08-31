@@ -1,0 +1,93 @@
+// passed props.on value to React.useState() in order to chang it's value
+import React from "react";
+function BoxComponent(props)
+{
+    const [onValue, setOnValue] = React.useState(props.on); //derived state
+    function changeValue()
+    {
+        setOnValue((onValue)=>{
+            if (onValue === false)
+            {
+                return true;
+            }
+            else if(onValue === true)
+            {
+                return false;
+            }
+        })
+    }
+    
+    const styles = 
+    {
+        backgroundColor: onValue ? "#222222" : "transparent"
+    };
+    return (
+        <div style={styles} className="box" onClick={changeValue}>
+        </div>
+    )
+}
+export default BoxComponent;
+
+// in this document the prop value is given as a dataItem from the map function which iterates over the box.js file
+import React from "react";
+import boxes from "./box.js";
+import "../CSS/box.css";
+import BoxComponent from "./boxComponent.js";
+function BoxApp(props)
+{
+    // const [boxValues, setBox] = React.useState(boxes);
+    // const [boxValue, setBox] = React.useState(props.on)
+    // if (props.darkMode == true)
+    // {
+    //     const styles = {backgroundColor: "black"};
+    // }
+    
+    //tenary representation
+    // const styles = { 
+    //     backgroundColor: props.darkMode ? "black" : "gray"
+    // };
+
+    function toggle()
+    {
+        console.log("Clicked!");
+    };
+    const boxElements = boxes.map((dataItems)=>{
+        return (<BoxComponent key={dataItems.id} on={dataItems.on} />)
+    })
+    // let isBool = boxValues.on === true ? "blue" : "none";
+    return (
+        <div>
+            <h1>Boxes will go here</h1>
+            {boxElements}
+        </div>
+    )
+}
+export default BoxApp;
+
+export default [
+	{
+		id:1,
+		on: true
+	},
+	{
+		id: 2,
+		on: false
+	},
+	{
+		id: 3,
+		on: true
+	},
+	{
+		id: 4,
+		on: true
+	},
+	{
+		id: 5,
+		on: false
+	},
+	{
+		id: 6,
+		on: false
+	}
+]
+//on : true display box
