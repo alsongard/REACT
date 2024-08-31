@@ -22,7 +22,8 @@ function JokeComponent(props){
         
         <div className="jokes">
             <p>{props.setup}</p>
-            <p style={styles}>{props.punchline}</p>
+            {/* <p style={styles}>{props.punchline}</p> */}
+            {isShown && <p>{props.punchline}</p>}
             <button onClick={toggle}>show punchline</button>
             <hr/>
         </div>
