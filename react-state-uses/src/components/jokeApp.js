@@ -1,4 +1,3 @@
-import React from "react";
 import jokes from "./jokes";
 import JokeComponent from "./jokeComponent";
 import "../css/joke.css";
