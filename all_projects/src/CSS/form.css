@@ -4,15 +4,24 @@
     padding:0;
     box-sizing: border-box;
 }
+body
+{
+    background:grey;
+}
 form{
-    width:80%;
-    margin:0 auto;
+    width:50%;
+    margin:100px auto 0 auto;
+    background: rgb( 52, 73, 94 );
+    padding:25px 0;
+    border-radius: 10px;
 }
 form input[type="text"], form textarea, form input[type="email"], form select
 {
     display: block;
     width:50%;
-    margin:0 auto;
+    margin:10px auto;
+    border:none;
+    padding:2.5px 5px;
 }
 form fieldset
 {

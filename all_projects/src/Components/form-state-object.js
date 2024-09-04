@@ -67,7 +67,7 @@ function FormStateObjectComponent()
                 <option value="green">green</option>
                 <option value="blue">blue</option>
             </select>
-            <button>Submit</button>
+
         </form>
     )
 }
