@@ -20,8 +20,8 @@ function FormComponent()
     return (
         <div>
             <form>
-                <input type="text" onChange={handleChange} placeholder="First name.."/>
-                <input type="text" onChange={secondChange} placeholder="Last name.."/>
+                <input type="text" onChange={handleChange} name="fname" placeholder="First name.."/>
+                <input type="text" onChange={secondChange} name="lname" placeholder="Last name.."/>
 
                 <p>{userInput} {lastName}</p>
             </form>

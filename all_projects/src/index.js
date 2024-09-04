@@ -9,7 +9,9 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 // import MemePage from './Components/memePage.js';
 // import CountProp from './Components/countProps.js';
-import BoxApp from './Components/boxApp.js';
+// import BoxApp from './Components/boxApp.js';
+import FormComponent from './Components/form-react';
+import FormStateObjectComponent from './Components/form-state-object';
 // import TouristPage from './Components/touristPage.js';
 // import  ProfilePage from "./profile";
 // import ProfileUser from './Components/reactObjects.js';
@@ -19,7 +21,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BoxApp/>
+    <FormStateObjectComponent/>
   </React.StrictMode>
 );
 reportWebVitals();

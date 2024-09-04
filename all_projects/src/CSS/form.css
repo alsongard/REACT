@@ -1,0 +1,56 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+form{
+    width:80%;
+    margin:0 auto;
+}
+form input[type="text"], form textarea, form input[type="email"], form select
+{
+    display: block;
+    width:50%;
+    margin:0 auto;
+}
+form fieldset
+{
+    width:50%;
+    margin:0 auto;
+}
+form input[type="radio"]
+{
+    width:unset;
+    display: unset;
+}
+fieldset > label
+{
+    margin: 0;
+    display: block;
+}
+.checkbox-container
+{
+    width:50%;
+    /* border: 2px solid brown; */
+    display: flex;
+    gap:5px;
+    margin:0 auto;
+}
+.checkbox-container label
+{
+    margin:unset;
+}
+form > label
+{
+    display: block;
+    margin:unset;
+    margin:0 auto;
+    width:50%;
+}
+button
+{
+    display: block;
+    width:50%;
+    margin:0 auto;
+}
