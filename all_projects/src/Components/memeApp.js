@@ -34,17 +34,30 @@ function Meme(){
             }
         } );
     }
+    function handleChange(event)
+    {
+        const {name, value} =  event.target
+        setMeme((prevMeme)=>{
+            return {
+                ...prevMeme,
+                [name] : value
+            }
+        })
+    };
+
     return(
         <section className="home">
             <form>
                 <div className="seperator">
-                    <input type="text" placeholder="Enter title.."/>
-                    <input type="text" placeholder="Enter title.."/>
+                    <input type="text" name="topText" value={meme.topText} onChange={handleChange} placeholder="Enter title.."/>
+                    <input type="text" name="bottomText" value={meme.bottomText} onChange={handleChange} placeholder="Enter title.."/>
                 </div>
             </form>
             <button onClick={getMemeImage}>Get new meme image</button>
             <div className="imageHolder">
                 <img src={meme.randomImage}  className="memeImg" alt="meme"/>
+                <p className="text top">{meme.topText}</p>
+                <p className="text bottom">{meme.bottomText}</p>
                 {/* in the above statement meme is an object and random image is a property */}
             </div>
         </section>

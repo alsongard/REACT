@@ -7,13 +7,13 @@ import ReactDOM from 'react-dom/client';
 // import AirBnBPage from "./Components/AirBnB.js";
 // import JokeApp  from './Components/jokeApp.js';
 // import App from './App';
-// import MemePage from './Components/memePage.js';
+import MemePage from './Components/memePage.js';
 // import CountProp from './Components/countProps.js';
 // import BoxApp from './Components/boxApp.js';
 // import FormComponent from './Components/form-react';
 // import FormStateObjectComponent from './Components/form-state-object';
 // import SportFormComponent from './Components/sport-form';
-import FormChallengeComponent from './Components/form-challenge';
+// import FormChallengeComponent from './Components/form-challenge';
 // import TouristPage from './Components/touristPage.js';
 // import  ProfilePage from "./profile";
 // import ProfileUser from './Components/reactObjects.js';
@@ -23,7 +23,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormChallengeComponent/>
+    <MemePage/>
   </React.StrictMode>
 );
 reportWebVitals();
