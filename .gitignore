@@ -5,3 +5,7 @@
 # props app
 ./props/package.json
 ./props/package-lock.json
+
+# environmental variables and dependancies
+node_modules
+.vscode
