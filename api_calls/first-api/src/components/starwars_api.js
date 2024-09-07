@@ -2,26 +2,26 @@ import React from "react";
 function StarWarsApi()
 {
     const [starWarsData, setStarWarsData] = React.useState({}); 
-    const [planet, setPlanet]  = React.useState(0);
+    const [user, setUser]  = React.useState(0);
 
     console.log("Component Rendered");
     React.useEffect(()=>{
-        fetch("https://swapi.dev/api/people/1/")
+        console.log("Effect run");
+        fetch(`https://swapi.dev/api/people/${user}/`)
         .then(res => res.json())
         .then(data => setStarWarsData(data))
         // .then(data => console.log(data))
-    },[planet]);
+    }, [user]);
     
-    function newPlanet()
+    function newUser()
     {
-        setPlanet((prevValue)=>{return prevValue + 1})
+        setUser((prevValue)=>{return prevValue + 1})
     }
 
     return (
         <div>
+            <button onClick={newUser}>Get New Character</button>
             <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
-            <p>Planet number is {planet} </p>
-            <button onClick={newPlanet}>New Planet</button>
         </div>
     )
 }
