@@ -7,7 +7,8 @@ import ReactDOM from 'react-dom/client';
 // import AirBnBPage from "./Components/AirBnB.js";
 // import JokeApp  from './Components/jokeApp.js';
 // import App from './App';
-import MemePage from './Components/memePage.js';
+// import MemePage from './Components/memePage.js';
+import WindowPage from './Components/windowPage';
 // import CountProp from './Components/countProps.js';
 // import BoxApp from './Components/boxApp.js';
 // import FormComponent from './Components/form-react';
@@ -23,7 +24,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MemePage/>
+    <WindowPage/>
   </React.StrictMode>
 );
 reportWebVitals();
