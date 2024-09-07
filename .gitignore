@@ -7,3 +7,4 @@
 ./props/package-lock.json
 
 ./.vscode
+./node_modules
