@@ -1,28 +1,28 @@
+// Using useEffect to fetch data from our api
 import React from "react";
-import memesData from "./memesData.js";
-
 
 //start of the function to be exported and used in memePage
 function Meme(){
-    // function handler(){
-    //     console.log("Welcome to Project Meme!")
-    // }
-    /*function getMemeImage(){
-        const memeArray = MemesData.data.memes;
-        console.log(memeArray); 
-        const randomIndex = Math.floor(Math.random() * memeArray.length);
-        console.log(randomIndex);
-        setMemeImage(memeArray[randomIndex].url);
-    }*/
+
+    
+    const [memeData, setAllMemeImages] = React.useState();
+    
+    React.useEffect(()=>{
+        console.log("Effect run")
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res=>res.json())
+            .then(data=>setAllMemeImages(data.data.memes))
+    }, [])
     const [meme, setMeme] = React.useState({
         topText : "",
         bottomText: "",
         randomImage : "https://i.imgflip.com/30b1gx.jpg"
     });
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData);
-    const[memeImage, setMemeImage] = React.useState("https://i.imgflip.com/30b1gx.jpg");
+    console.log("All meme images ")
+    console.log(memeData);
+    // console.log(`Length of allMemeImages is ${memeData.length}`);
     function getMemeImage(){
-        const memesArray = allMemeImages.data.memes;
+        const memesArray = memeData;
         const randomIndexNumber = Math.floor(Math.random() * memesArray.length);
         console.log(randomIndexNumber);
         const url = memesArray[randomIndexNumber].url;
