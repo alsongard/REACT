@@ -6,7 +6,8 @@ export default function Form4(){
         firstName: "",
         secondName: "",
         userEmail: "",
-        userAge:""
+        userAge:"",
+        comment: ""
     });
 
     console.log(formData);
@@ -25,6 +26,7 @@ export default function Form4(){
                 <input placeholder="Enter second name" type="text" onChange={handleChange} name="secondName"/>
                 <input placeholder="Enter email" type="email" onChange={handleChange} name="userEmail"/>
                 <input placeholder="Enter age" type="number" onChange={handleChange} name="userAge"/>
+                <textarea name="comment" value={formData.comment} onChange={handleChange} />
             </form>
         </div>
     )
