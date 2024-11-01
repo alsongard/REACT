@@ -8,7 +8,7 @@ function Meme(){
     const [memeData, setAllMemeImages] = React.useState();
     
     React.useEffect(()=>{
-        console.log("Effect run")
+        // console.log("Effect run") 
         fetch("https://api.imgflip.com/get_memes")
             .then(res=>res.json())
             .then(data=>setAllMemeImages(data.data.memes))
@@ -18,8 +18,8 @@ function Meme(){
         bottomText: "",
         randomImage : "https://i.imgflip.com/30b1gx.jpg"
     });
-    console.log("All meme images ")
-    console.log(memeData);
+    // console.log("All meme images ")
+    // console.log(memeData);
     // console.log(`Length of allMemeImages is ${memeData.length}`);
     function getMemeImage(){
         const memesArray = memeData;

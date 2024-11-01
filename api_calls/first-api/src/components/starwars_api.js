@@ -10,18 +10,18 @@ function StarWarsApi()
         fetch(`https://swapi.dev/api/people/${user}/`)
         .then(res => res.json())
         .then(data => setStarWarsData(data))
-        // .then(data => console.log(data))
     }, [user]);
     
     function newUser()
     {
         setUser((prevValue)=>{return prevValue + 1})
     }
-
+    console.log("Trying to see type of data:");
     return (
         <div>
             <button onClick={newUser}>Get New Character</button>
             <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
+            <p>{starWarsData.name}</p>
         </div>
     )
 }

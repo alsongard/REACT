@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
-import StarWarsApi from './components/starwars_api';
-import MemePage from './components/memePage';
-// import ObserveDependency from './components/dependency_array';
+import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StarWarsApi />
+    <App />
   </React.StrictMode>
 );
 
