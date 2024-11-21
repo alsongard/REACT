@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+/*
 header
 {
     display:flex;
@@ -14,7 +15,7 @@ header
 .home
 {
     width:50%;
-    /* border:2px solid black; */
+    /* border:2px solid black; 
     margin:0 auto;
     padding:20px 0;
 }
@@ -32,3 +33,4 @@ li::marker
 {
     font-size: 34px;
 }
+*/
