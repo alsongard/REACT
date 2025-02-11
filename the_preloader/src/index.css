@@ -1,3 +1,7 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer base{
+  .preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./images/backiee-818-landscape.jpg");
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    animation: spin 3s ease-in-out infinite;
+  }
+  .page{
+    transition: ease-in-out 0.70s;
+  }
+  
+  @keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+}
+/* Preloader.css */
+
