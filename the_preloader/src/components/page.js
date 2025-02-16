@@ -1,7 +1,8 @@
 import React from 'react'
 import Preloader from './preloader';
 import Header from './header';
-
+import HomePage from "./homePage";
+import Footer from "./footer";
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
 export default function Page() {
@@ -21,8 +22,8 @@ export default function Page() {
                 <main className="page ">
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/" element={<div><Header/> <Outlet/> </div>}>
-
+                            <Route path="/" element={<div><Header/> <Outlet/> <Footer/> </div>}>
+                                <Route index element={<HomePage/>}/>
                             </Route>
                         </Routes>
 
