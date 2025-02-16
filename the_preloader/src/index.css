@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,9 +14,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 @layer base{
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
   .preloader {
     display: flex;
     align-items: center;
@@ -41,6 +46,15 @@ code {
     to {
         transform: rotate(360deg);
     }
+  }
+  .home
+  {
+    background-image:url("./images/laptop_1.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .myImage{
+    background-image:url("./images/backiee-818-landscape.jpg");
   }
   
 }
